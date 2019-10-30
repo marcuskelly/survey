@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Survey</title>
+  <meta name="author" content="Mark Kelly">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/styles.css">
+  	<!--Bootsrap 4 CDN-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    
+    <!--Fontawesome CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+
+<div class="text-center">
+  <h1 class="banner">Thank you. Here are your results</h1>
+  <div id="question_one"></div>
+</div>
+  
+</body>
+    <script type="text/javascript">
+        var firstQuestion = document.getElementById("question_one").innerHTML + localStorage.getItem("one");
+        document.getElementById("question_one").innerHTML = firstQuestion;
+    </script>
+</html>
